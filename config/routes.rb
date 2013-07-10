@@ -1,4 +1,25 @@
 Rainforest::Application.routes.draw do
+
+
+  # get "products/index"
+
+  # get "products/show"
+
+  # get "products/new"
+
+  # get "products/edit"
+
+  resources :products
+#everything below represents resources :products:
+
+  # get '/products' => 'products#index' #products_path
+  # post '/products' => 'products#create'
+  # get '/products/new' => 'products#new' #new_product_path
+  # get '/products/:id/edit' => 'products#edit' #edit_product_path
+  # get '/products/:id' => 'products#show' #product_path
+  # put 'products/:id' => 'products#update'
+  # delete 'products/:id' => 'products#destroy'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,15 @@
+<h1>Products#index</h1>
+
+<% @products.each do |product| %>
+<div class = 'products'>
+<p>
+<%= product[:sku] %>
+<br>
+<%= product[:name] %>
+<br>
+<%= product[:description] %>
+<br>
+<%= product[:price_in_cents] %>
+</p>
+</div>
+<% end %>
