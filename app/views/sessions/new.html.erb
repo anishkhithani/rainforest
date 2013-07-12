@@ -1,0 +1,19 @@
+<h1>Log in</h1>
+<!-- not using form_for because sessions model does not exist
+ -->
+ <%= form_tag sessions_path do %>
+  <div class = "field">
+    <%= label_tag  :email %> <br>
+    <%= email_field_tag :email %>
+  </div>
+
+  <div class = "field">
+    <%= label_tag  :password %> <br>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class = "action">
+    <%= submit_tag "Log in" %>
+  </div>
+
+<% end %>
