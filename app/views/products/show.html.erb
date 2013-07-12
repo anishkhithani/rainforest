@@ -1,5 +1,5 @@
 <h1>Products <%= @product[:sku] %> </h1>
-<div class = 'product'>
+<div class='product'>
 <p>
 <%= @product[:sku] %>
 <br>
@@ -7,6 +7,6 @@
 <br>
 <%= @product[:description] %>
 <br>
-<%= @product[:price_in_cents] %>
+<%= @product.formatted_price %>
 </p>
 </div>
